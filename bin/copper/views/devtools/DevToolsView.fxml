@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="646.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="copper.controllers.devtools.DevToolsController">
+   <children>
+      <HBox prefHeight="71.0" prefWidth="259.0" spacing="20.0" style="-fx-background-color: white;">
+         <children>
+            <Label text="Dev Tools">
+               <font>
+                  <Font name="Segoe UI" size="25.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="50.0" top="20.0" />
+         </padding>
+         <effect>
+            <DropShadow color="#b2b2b2" height="11.985" radius="2.49625" width="0.0" />
+         </effect>
+      </HBox>
+      <VBox fx:id="browser" alignment="CENTER" layoutX="77.0" layoutY="104.0" onMouseClicked="#loadBrowser" prefHeight="200.0" prefWidth="188.0" spacing="20.0" style="-fx-background-color: white;" styleClass="container">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/images/browserIcon.png" />
+               </image>
+            </ImageView>
+            <Label text="Browser">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </VBox>
+      <VBox fx:id="fileManager" alignment="CENTER" layoutX="347.0" layoutY="104.0" onMouseClicked="#loadFileManager" prefHeight="200.0" prefWidth="188.0" spacing="10.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/images/fileManager.png" />
+               </image>
+            </ImageView>
+            <Label text="File Manager">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></VBox>
+      <VBox fx:id="phpMyAdmin" alignment="CENTER" layoutX="77.0" layoutY="373.0" onMouseClicked="#loadPhpMyAdmin" prefHeight="200.0" prefWidth="188.0" spacing="10.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/images/phpmyadmin.png" />
+               </image>
+            </ImageView>
+            <Label text="phpMyAdmin">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></VBox>
+      <VBox fx:id="configurations" alignment="CENTER" layoutX="347.0" layoutY="373.0" onMouseClicked="#loadConfigurations" prefHeight="200.0" prefWidth="188.0" spacing="10.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/images/settingsIcon.png" />
+               </image>
+            </ImageView>
+            <Label text="Configurations">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></VBox>
+   </children>
+</Pane>

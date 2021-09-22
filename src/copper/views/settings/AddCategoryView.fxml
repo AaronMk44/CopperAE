@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="291.0" prefWidth="513.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="copper.controllers.settings.ModifyCategoryController">
+   <children>
+      <JFXTextField fx:id="name" focusColor="#bc6f33" labelFloat="true" layoutX="77.0" layoutY="54.0" prefHeight="25.0" prefWidth="382.0" promptText="Category Name" unFocusColor="#bc6f33">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="addBtn" layoutX="218.0" layoutY="221.0" onAction="#add" prefWidth="100.0" style="-fx-background-color: #bc6f33;" text="Add" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="extension" focusColor="#bc6f33" labelFloat="true" layoutX="77.0" layoutY="125.0" prefHeight="25.0" prefWidth="382.0" promptText="Extension" unFocusColor="#bc6f33">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</Pane>

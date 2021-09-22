@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="copper.views.dashboard_views.HomeController">
+   <children>
+      <HBox prefHeight="91.0" prefWidth="600.0">
+         <children>
+            <Label text="Home">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="50.0" top="20.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="272.0" prefWidth="600.0" spacing="70.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="218.0" prefWidth="100.0" spacing="20.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@userIcon.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Users">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="numberOfUsers" layoutX="10.0" layoutY="160.0" text="Number" />
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="218.0" prefWidth="100.0" spacing="20.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@developer.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Developers">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="numberOfDevelopers" layoutX="10.0" layoutY="160.0" text="Number" />
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" layoutX="210.0" layoutY="10.0" prefHeight="218.0" prefWidth="100.0" spacing="20.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@webApps.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Web Apps">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="numberOfWebApps" layoutX="10.0" layoutY="160.0" text="Number" />
+               </children>
+            </VBox>
+         </children>
+         <VBox.margin>
+            <Insets top="5.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="BASELINE_RIGHT" layoutX="10.0" layoutY="110.0" prefHeight="33.0" prefWidth="600.0">
+         <children>
+            <JFXButton fx:id="refreshStatsBtn" onAction="#refreshStatistics" text="Refresh Stats" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>

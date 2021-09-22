@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane id="AnchorPane" prefHeight="451.0" prefWidth="597.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="copper.controllers.user.EditUserController">
+   <children>
+      <JFXTextField fx:id="firstName" focusColor="#bc6f33" labelFloat="true" layoutX="29.0" layoutY="66.0" prefHeight="25.0" prefWidth="244.0" promptText="First Name" unFocusColor="#bc6f33">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="lastName" focusColor="#bc6f33" labelFloat="true" layoutX="322.0" layoutY="66.0" prefHeight="25.0" prefWidth="244.0" promptText="Last Name" unFocusColor="#bc6f33">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="email" focusColor="#bc6f33" layoutX="29.0" layoutY="145.0" prefHeight="31.0" prefWidth="299.0" promptText="Email" unFocusColor="#bc6f33">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXRadioButton fx:id="adminRadioBtn" layoutX="29.0" layoutY="333.0" text="Admin" />
+      <Label layoutX="29.0" layoutY="292.0" text="User Group">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <JFXRadioButton fx:id="regularRadioBtn" layoutX="142.0" layoutY="333.0" selected="true" text="Regular" />
+      <JFXButton fx:id="createBtn" layoutX="264.0" layoutY="381.0" onAction="#updateUser" style="-fx-background-color: #bc6f33;" text="Update" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXRadioButton fx:id="maleRadioBtn" layoutX="29.0" layoutY="254.0" text="Male" />
+      <Label layoutX="29.0" layoutY="213.0" text="Gender">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <JFXRadioButton fx:id="femaleRadioBtn" layoutX="142.0" layoutY="254.0" text="Female" />
+   </children>
+</Pane>

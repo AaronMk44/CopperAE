@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-border-color: #eee; -fx-border-radius: 5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="copper.controllers.settings.AppCategoriesController">
+   <children>
+      <HBox prefHeight="53.0" prefWidth="598.0">
+         <children>
+            <Label text="Web App Categories">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets left="20.0" top="10.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="57.0" prefWidth="600.0" spacing="20.0">
+         <children>
+            <JFXButton fx:id="addBtn" onAction="#add" prefWidth="100.0" style="-fx-background-color: #bc6f33;" text="Add" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="removeBtn" layoutX="10.0" layoutY="10.0" onAction="#remove" prefWidth="100.0" style="-fx-background-color: #bc6f33;" text="Remove" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="updateBtn" layoutX="62.0" layoutY="10.0" onAction="#update" prefWidth="100.0" style="-fx-background-color: #bc6f33;" text="Edit" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <padding>
+            <Insets left="20.0" top="10.0" />
+         </padding>
+      </HBox>
+      <VBox fx:id="tableContainer" prefWidth="600.0">
+         <padding>
+            <Insets left="20.0" right="10.0" top="10.0" />
+         </padding></VBox>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</VBox>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="208.0" prefWidth="522.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="copper.controllers.developer.DeleteDeveloperController">
+   <children>
+      <Label layoutX="175.0" layoutY="54.0" text="Are you sure you want to delete:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="userTag" layoutX="211.0" layoutY="94.0" text="Label">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="83.0" fitWidth="73.0" layoutX="53.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/images/errorIcon.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="yesBtn" layoutX="166.0" layoutY="142.0" onAction="#delete" prefWidth="70.0" style="-fx-background-color: #eee;" text="Yes" textFill="#1b1a1a">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="noBtn" layoutX="329.0" layoutY="142.0" onAction="#closeWindow" prefWidth="70.0" style="-fx-background-color: #eee;" text="No" textFill="#1b1a1a">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</Pane>
