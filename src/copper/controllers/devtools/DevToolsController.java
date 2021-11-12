@@ -28,7 +28,7 @@ public class DevToolsController
     	Configurations.authorise();
     	Runtime runTime = Runtime.getRuntime();
 		try {
-			Process process = runTime.exec("H:\\Projects\\Copper\\Adapters\\BrowserAdapter.exe");
+			Process process = runTime.exec("Adapters\\BrowserAdapter.exe");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -46,7 +46,7 @@ public class DevToolsController
     	Configurations.authorise();
     	Runtime runTime = Runtime.getRuntime();
 		try {
-			Process process = runTime.exec("H:\\Projects\\Copper\\Adapters\\FileManagerAdapter.exe");
+			Process process = runTime.exec("Adapters\\FileManagerAdapter.exe");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -58,7 +58,7 @@ public class DevToolsController
     	Configurations.authorise();
     	Runtime runTime = Runtime.getRuntime();
 		try {
-			Process process = runTime.exec("H:\\Projects\\Copper\\Adapters\\PhpMyAdminAdapter.exe");
+			Process process = runTime.exec("Adapters\\PhpMyAdminAdapter.exe");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

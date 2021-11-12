@@ -78,7 +78,12 @@ public class UserViewController implements Initializable
             {
                 ErrorView box = new ErrorView("You can not delete an admin.");
                 box.getWindow();
-            }else
+            }else if(selected.getSelectedItem().getIsDeveloper())
+            {
+            	ErrorView box = new ErrorView("You can not delete a developer directly.\nDelete their developer account first.");
+                box.getWindow();
+            }
+            else
             {
                 DeleteUserView view = new DeleteUserView();
                 view.getWindow(selected.getSelectedItem(), tableObj);

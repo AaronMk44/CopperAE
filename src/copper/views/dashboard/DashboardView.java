@@ -46,7 +46,7 @@ public class DashboardView
             scene.getStylesheets().add(getClass().getResource("/copper/assets/dark.css")
             .toExternalForm());
         }
-        window.setTitle("Copper Administrator's Edition - Dashboard");
+        window.setTitle("Copper Administrator Edition - Dashboard");
         window.setScene(scene);
         window.setResizable(true);
         window.setMinWidth(1100);

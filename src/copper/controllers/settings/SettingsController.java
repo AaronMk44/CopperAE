@@ -25,7 +25,6 @@ public class SettingsController implements Initializable
     public void initialize(URL url, ResourceBundle rb)
     {
         this.categories = new AppCategoriesView();
-        System.out.println("About to return the categories");
         this.container.getChildren().add(this.categories.getScene());
         
         /*this.theme = new ThemeView();

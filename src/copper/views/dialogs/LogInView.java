@@ -41,7 +41,7 @@ public class LogInView
 
         Scene scene = new Scene(root);
 
-        window.setTitle("Copper Administrator's Edition - Log In");
+        window.setTitle("Copper Administrator Edition - Log In");
         window.setScene(scene);
         window.setResizable(false);
         window.initModality(Modality.APPLICATION_MODAL);

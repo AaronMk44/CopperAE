@@ -45,8 +45,8 @@ public class DeleteDeveloperController
         this.table.reload();
         this.window.close();
         
-        SuccessView box = new SuccessView("Developer successfully deleted.\n"
-                                              + "Delete the FTP and Database accounts also.");
+        SuccessView box = new SuccessView(this.user.getUsername()+" successfully deleted.\n"
+                                              + "Delete the Database and File Manager account.");
         box.getWindow();   
     }
     
